@@ -1,10 +1,11 @@
 baseURL = 'https://akwasi-dev.github.io/'
 languageCode = 'en-us'
 title = "Isaac's space"
+theme = 'joway'
 
-[author]
-  name = "Isaac"
-  homepage = "https://akwasi-dev.github.io/"
+[params]
+headTitle = "Isaac's space"
+mainSections = ["posts"]
 
 [[params.socials]]
 name = "Github"

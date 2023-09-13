@@ -2,6 +2,8 @@
 title = 'Hey'
 date = 2023-09-13T01:54:09Z
 draft = true
+tags = ["intro"]
+categories = ["introductory"]
 +++
 
 Hey there! It's great to have you here! A little backstory to why I decided to start this blog: 
