@@ -1,4 +1,4 @@
-baseURL = 'https://akwasi-dev.github.io/'
+baseURL = 'https://akwasiio.github.io/'
 languageCode = 'en-us'
 title = "Isaac's space"
 theme = 'joway'
@@ -9,7 +9,7 @@ mainSections = ["posts"]
 
 [[params.socials]]
 name = "Github"
-link = "https://github.com/akwasi-dev"
+link = "https://github.com/akwasiio"
 
 [[params.socials]]
 name = "Twitter"
