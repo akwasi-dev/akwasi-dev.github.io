@@ -1,13 +1,25 @@
 +++
-title = 'Hey'
+title = 'Bonjour le monde'
 date = 2023-09-13T01:54:09Z
-draft = true
-tags = ["intro"]
-categories = ["introductory"]
+draft = false
+tags = ["meta"]
+categories = ["meta"]
 +++
 
-Hey there! It's great to have you here! A little backstory to why I decided to start this blog: 
-At my last company, we were encouraged to write a lot but somehow I couldn't consistently get over my 4 year writing block so I ended up writing 2 technical docs. This is bad, considering I solved some interesting problems. So this blog is meant to help me tackle this bad habit. It's also to help me get comfortable documenting the problems I encounter, the interesting ways I come up with to solve these problems, and every other thing I learn that I think would be worth my readers' while. 
+Welcome to **myspace**. I appreciate you taking the time to read this. Here is where I will share my projects, musings, problems I encounter (and how I solve them), even if no one is looking, reading or caring. 
 
-I would appreciate it a lot if readers reach out with comments in response to things said in future articles, positive and not too negative feedback on writing style, et cetera. 
-Thank you for reading! See you when the next post drops ;) let's see if this works'
+## Why? 
+I'm in the arena trying stuff. Some will work, some won't; I want to be documenting everything. 
+Seriously though, I don't write enough and this is an effort to change that. 
+
+*PS: Thank you Chamath for that classic quote*
+
+## Posting Schedule? 
+Although I have some time on my hands now, I do not want to commit to a posting schedule for this blog. Instead, I'll be sharing posts as soon as drafts are completed, which I hope would happen quite frequently ;).
+
+## Conclusion? 
+If you do care enough to read the posts on this blog, I will appreciate it a whole lot if you could spend some extra time to opine and share feedback on writing style, typos and bad grammar. 
+
+So long. 
+
+— Isaac. 
