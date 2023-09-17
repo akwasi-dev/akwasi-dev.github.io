@@ -12,7 +12,7 @@ Welcome to **myspace**. I appreciate you taking the time to read this. Here is w
 I'm in the arena trying stuff. Some will work, some won't; I want to be documenting everything. 
 Seriously though, I don't write enough and this is an effort to change that. 
 
-*PS: Thank you Chamath for that classic quote*
+*PS: Thank you Chamath for that iconic quote*
 
 ## Posting Schedule? 
 Although I have some time on my hands now, I do not want to commit to a posting schedule for this blog. Instead, I'll be sharing posts as soon as drafts are completed, which I hope would happen quite frequently ;).
