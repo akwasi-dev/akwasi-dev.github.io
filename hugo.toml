@@ -1,11 +1,19 @@
 baseURL = 'https://akwasiio.github.io/'
 languageCode = 'en-us'
-title = "Isaac's space"
-theme = 'joway'
+title = "Isaac Akwasi"
+theme = 'etch'
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
 
 [params]
-headTitle = "Isaac's space"
+headTitle = "Isaac Akwasi"
 mainSections = ["posts"]
+copyright = "Copyright © Isaac A. Oppong Jnr"
+dark = "off"
+highlight = true
+extraCSSFiles = ["custom_table.css"]
 
 [[params.socials]]
 name = "Github"
@@ -14,3 +22,13 @@ link = "https://github.com/akwasiio"
 [[params.socials]]
 name = "Twitter"
 link = "https://twitter.com/heyakwasi"
+
+[markup.highlight]
+      codeFences = true
+      guessSyntax = true
+      hl_Lines = ""
+      lineNoStart = 1
+      lineNos = true
+      lineNumbersInTable = true
+      tabWidth = 4
+      noClasses = false
