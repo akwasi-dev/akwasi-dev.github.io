@@ -1,7 +1,7 @@
 +++
 title = '''Running SQLite's JSON Functions in SQLDelight'''
 date = 2023-10-02T19:37:51Z
-draft = true
+draft = false
 categories = ["KMP"]
 tags = ["kmp", "sqlite", "sqldelight", "json_group_array"]
 +++
