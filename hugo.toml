@@ -14,7 +14,7 @@ mainSections = ["posts"]
 copyright = "Copyright © Isaac A. Oppong Jnr"
 dark = "off"
 highlight = true
-extraCSSFiles = ["custom_table.css"]
+# extraCSSFiles = ["custom_table.css"]
 
 [[params.socials]]
 name = "Github"
