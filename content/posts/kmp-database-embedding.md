@@ -14,8 +14,9 @@ Before we get started, I used [Moko Resources](https://github.com/icerockdev/mok
 
 Since I needed the Share Extension to use the same database as the main application, I had to set up an App Group for that to work. This article won't delve into app group creation but Apple has great [documentation](https://developer.apple.com/documentation/xcode/configuring-app-groups) on how to set one up in Xcode.
 
-The code snippet below demonstrates how to implement a shared database on iOS:
+## Let's dive in
 
+The code snippet below demonstrates how to implement a shared database on iOS:
 ```kotlin 
 actual fun createDbDriver(): SqlDriver {
 	val basePath = NSFileManager  
