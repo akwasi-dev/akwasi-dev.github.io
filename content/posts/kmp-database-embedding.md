@@ -1,7 +1,7 @@
 +++
-title = '''Kotlin Multiplatform: Embedding Databases on iOS'''
+title = '''Kotlin Multiplatform: Embedding an existing database on iOS'''
 date = 2023-10-02T19:37:51Z
-draft = true
+draft = false
 categories = ["KMP"]
 tags = ["kmp", "sql", "sqldelight", "ios", "kotlin multiplatform"]
 +++
