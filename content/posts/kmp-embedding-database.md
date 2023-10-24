@@ -1,9 +1,7 @@
 +++
-title = '''Kotlin Multiplatform: Embedding a database on iOS'''
-date = 2023-10-02T19:37:51Z
-draft = false
-categories = ["KMP"]
-tags = ["kmp", "sql", "sqldelight", "ios", "kotlin multiplatform"]
+title = 'Kotlin Multiplatform: Embedding a database on iOS'
+date = 2023-10-24T03:13:14Z
+draft = true
 +++
 
 Over the past few days, I encountered the task of embedding a database file into a Kotlin Multiplatform (KMP) application I was working on. Fortunately, I stumbled upon [a relevant question](https://stackoverflow.com/questions/76382380/pre-populate-database-in-kmm-on-ios-side-using-sqldelight) on StackOverflow that provided a working implementation for the Android platform, but an equivalent iOS implementation was missing. This article will delve into the iOS implementation, as the Android solution has been provided referenced StackOverflow discussion.
@@ -72,13 +70,14 @@ From the above:
 Next, we implement steps 3 to 5 from our pseudocode:
 
 ```Kotlin 
+
 // just for readability sake
 val databaseExists = fileManager.fileExistsAtPath(targetDatabasePath) 
 
-if (!databaseExists) { // 1
+if (!databaseExists) { // if database file DOES NOT exist
 	val folderExists = fileManager.fileExistsAtPath(targetDbFolderPath)
 
-	if (!folderExists) {  // 2
+	if (!folderExists) {  // if database directory does not exist, create it
 		fileManager.createDirectoryAtPath( // 3
 			path = targetDbFolderPath, 
 			withIntermediateDirectories = true, 
@@ -87,15 +86,15 @@ if (!databaseExists) { // 1
 		)
 	} // end of inner if-statement
 
-	// still within the parent if-statement 
-	fileManager.copyItemAtPath( // 4
+	// copies the database file we want to embed from assets to the 
+	// target directory 
+	fileManager.copyItemAtPath(
 		srcPath = source, 
 		toPath = targetDatabasePath, 
 		error = null
 	)
-}
+} // outside if-statement
 
-// outside if-statement
 return NativeSqliteDriver(  
 	YourDatabase.Schema,  // Replace YourDatabase with your actual database
 		name = "databaseName.db",  
