@@ -1,4 +1,4 @@
-title = "Isaac's blog"
+title = "Akwasi's corner shop"
 baseURL = 'https://akwasiio.github.io/'
 languageCode = 'en-us'
 theme = 'hba'
@@ -31,12 +31,12 @@ googleAnalytics = 'G-92C9ZK8Y4Y' # G-MEASUREMENT_ID
 #   weight = 30
 
 [Languages.en-gb.params]
-sitename = "Awesome hugo blog"
+# sitename = "Awesome hugo blog"
 defaultColor = "auto" # set color mode: dark, light, auto
 # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
 # the default value is set to 'auto'.
 # You can take a look at layouts/index.html for more information.
-description = "Akwasi's little corner shop"
+#description = "Akwasi's little corner shop"
 mainSections = ['posts']
 toc = false # set to false to disable table of contents 'globally'
 goToTop = true # set to false to disable 'go to top' button
@@ -52,7 +52,8 @@ rssFeedDescription = "summary" # available options: 1) summary 2) full
 # full - includes full blog post in the RSS feed. Generated using Hugo .Content .
 # By default (or if nothing is specified), summary is used.
 
-# [Languages.en-gb.params.author]
+[Languages.en-gb.params.author]
+name = "Isaac Akwasi Oppong Jnr"
 # # avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
 # # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
 # # intro = "Akwasi's corner shop"
