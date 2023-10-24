@@ -1,12 +1,12 @@
 +++
-title = '''Kotlin Multiplatform: Embedding an existing database on iOS'''
+title = '''Kotlin Multiplatform: Embedding a database on iOS'''
 date = 2023-10-02T19:37:51Z
 draft = false
 categories = ["KMP"]
 tags = ["kmp", "sql", "sqldelight", "ios", "kotlin multiplatform"]
 +++
 
-Over the past few days, I encountered the task of embedding a pre-existing database file into a Kotlin Multiplatform (KMP) application I was working on. Fortunately, I stumbled upon [a relevant question](https://stackoverflow.com/questions/76382380/pre-populate-database-in-kmm-on-ios-side-using-sqldelight) on StackOverflow that provided a working implementation for the Android platform, but an equivalent iOS implementation was missing. This article will delve into the iOS implementation, as the Android solution has been provided referenced StackOverflow discussion.
+Over the past few days, I encountered the task of embedding a database file into a Kotlin Multiplatform (KMP) application I was working on. Fortunately, I stumbled upon [a relevant question](https://stackoverflow.com/questions/76382380/pre-populate-database-in-kmm-on-ios-side-using-sqldelight) on StackOverflow that provided a working implementation for the Android platform, but an equivalent iOS implementation was missing. This article will delve into the iOS implementation, as the Android solution has been provided referenced StackOverflow discussion.
 
 Before we get started, I used [Moko Resources](https://github.com/icerockdev/moko-resources) to share the external database file across both platforms. Also, the app I'm building has a Share Extension that needs to tap into the same database as the main application.  From Apple's docs: 
 
