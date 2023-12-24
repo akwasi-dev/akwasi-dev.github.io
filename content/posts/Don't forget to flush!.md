@@ -32,7 +32,7 @@ I looked into why this was happening and found a link to `print!`'s [documentati
 
 > `stdout` is frequently line-buffered by default so it may be necessary to use `io::stdout().flush()` to ensure the output is emitted immediately.
 
-What does `stdout` being line-buffered even mean? In simpler terms, `stdout` will store all the text you write to it until it meets the newline(\n) character or you explicitly **flush** out its memory. So to get the behavior I wanted, I had to add `io::stdout().flush()` after the `print!` macro. Problem solved. Curiosity still not satisfied because why don't languages like Kotlin require me to flush the output? The answer is simply because these other languages flush `stdout` under the hood. 
+What does `stdout` being line-buffered even mean? In simpler terms, `stdout` will store all the text you write to it until it meets the newline (\n) character or you explicitly **flush** out its memory. So to get the behavior I wanted, I had to add `io::stdout().flush()` after the `print!` macro. Problem solved. Curiosity still not satisfied because why don't languages like Kotlin require me to flush the output? The answer is simply because these other languages flush `stdout` under the hood. 
 
 Rust's decision to not autoflush, though a little controversial as is shown in the comments under this [issue](https://github.com/rust-lang/rust/issues/23818), is true to Rust's principle to refrain from implicitly doing stuff for you. David Tolnay's [comment](https://github.com/rust-lang/rust/issues/23818#issuecomment-349394249) highlights the Rust team's stance on the issue. 
 
